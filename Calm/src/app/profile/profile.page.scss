@@ -1,0 +1,26 @@
+ion-content{
+    --background: linear-gradient(90deg, 
+    rgba(177,58,137,100%)0%, 
+    rgba(94,44,139,100%)100%) 
+      
+    }
+
+    .prof{
+        width: 150px;
+        height: 150px;
+        align-items: center;
+        margin: auto;
+    }
+
+    .input{
+       
+        text-align: center;
+    }
+
+    .text{
+        text-align: center;
+    }
+
+    ion-title{text-align: center;
+        font-size: small;
+        }

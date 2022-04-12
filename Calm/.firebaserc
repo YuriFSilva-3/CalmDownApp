@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "calmdown-app": {
+      "hosting": {
+        "app": [
+          "calmdown-app"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "calmdown-app"
+  }
+}

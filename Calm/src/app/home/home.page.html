@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" (click)= "home" routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="excercise" (click)= "excercise" routerLink="/excercise">
+        <ion-icon name="barbell"></ion-icon>
+        <ion-label>Exercise</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="media" (click)= "media" routerLink="/media">
+        <ion-icon name="play-circle"></ion-icon>
+        <ion-label>Media</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="profile" (click)= "profile" routerLink="/profile">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+
+<ion-card>
+  <ion-card-title>Welcome! <br>
+    How are you feeling?
+  </ion-card-title>
+  <ion-card-content>
+    <ion-list>
+      <ion-item *ngFor="let note of notes" (click)="openNote(note)">
+        <ion-label>
+          {{ note.title }}
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+</ion-card>
+
+<ion-img src="../assets/images/homepage.gif"></ion-img>
+  
+</ion-content>

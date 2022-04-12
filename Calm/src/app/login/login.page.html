@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card id="container">
+  <ion-card-content>
+    <ion-img class="logo" src="../assets/images/logo.png" alt=''></ion-img> <br>
+    <ion-card-title>
+      Welcome! <br><br>
+      <h3>Take a deep breath and relax,<br> everything will be ok!</h3>
+    </ion-card-title> 
+    <br>
+
+    <form [formGroup]="credentials" (ngSubmit)="login()">
+
+    <input id="in" type="text"  placeholder="Email" formControlName="email"> <br> <br>
+
+    <input id="in" type="password"  placeholder="Password" formControlName="password"> <br> <br>
+
+    <ion-button type="ngSubmit" fill="solid" shape="round" color='dark'  >Login</ion-button>
+    <ion-button type = "button"fill="outline" shape="round" color="dark" (click)="register()">Signup</ion-button>
+  </form>
+  </ion-card-content>
+  </ion-card>
+

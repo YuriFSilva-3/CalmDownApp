@@ -1,0 +1,57 @@
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Videos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-card>
+  <ion-card-content>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/hOdtpCZp7TA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>  
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/FZimOSrRJN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </ion-card-content>
+</ion-card>
+
+<ion-card>
+  <ion-card-content>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/psQkuax3xj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </ion-card-content>
+</ion-card>
+
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" (click)= "home" routerLink="/home">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="excercise" (click)= "excercise" routerLink="/excercise">
+      <ion-icon name="barbell"></ion-icon>
+      <ion-label>Exercise</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="media" (click)= "media" routerLink="/media">
+      <ion-icon name="play-circle"></ion-icon>
+      <ion-label>Media</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile" (click)= "profile" routerLink="/profile">
+      <ion-icon name="person-circle"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+
+
+
+</ion-content>

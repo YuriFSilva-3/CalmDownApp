@@ -1,0 +1,66 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Profile</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="logout()">
+        <ion-icon slot="icon-only" name="log-out">
+        </ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+
+<div class="prof">
+  <ion-img src="../assets/images/profile1.png"></ion-img>
+</div>
+
+
+<div class="input">
+  <input class="text"type="text" placeholder="Name"><br><br>
+<input class="text"type="text" placeholder="Email"><br><br>
+<input class="text"type="text" placeholder="Phone Number">
+</div>
+
+
+
+
+
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="home" (click)= "home" routerLink="/home">
+        <ion-icon name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="excercise" (click)= "excercise" routerLink="/excercise">
+        <ion-icon name="barbell"></ion-icon>
+        <ion-label>Exercise</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="media" (click)= "media" routerLink="/media">
+        <ion-icon name="play-circle"></ion-icon>
+        <ion-label>Media</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="profile" (click)= "profile" routerLink="/profile">
+        <ion-icon name="person-circle"></ion-icon>
+        <ion-label>Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+ 
+  
+ 
+
+  
+
+     
+ 
+
+</ion-content>

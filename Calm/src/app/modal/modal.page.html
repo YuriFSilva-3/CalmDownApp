@@ -1,0 +1,18 @@
+<ion-content>
+
+  <ion-img src="../assets/images/modal.gif"></ion-img>
+  <div *ngIf="note">
+    <ion-item>
+      <ion-label position="stacked">How are you feeling?</ion-label> <br>
+      <ion-input [(ngModel)]="note.title"></ion-input>
+    </ion-item><br>
+
+    
+    
+    <ion-button expand="block" color="success" (click)="updateNote()">
+      <ion-icon name="save" slot="start"></ion-icon>
+      Save status
+    </ion-button>
+
+  </div>
+</ion-content>
